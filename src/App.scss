@@ -1,28 +1,12 @@
-.App {
-  text-align: center;
-  .App-header {
-    background-color: #222;
-    padding: 20px;
-    color: white;
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-      height: 80px;
-    }
-    .App-title {
-      font-size: 1.5em;
-    }
-  }
-  .App-intro {
-    font-size: large;
-    margin: 15px 0;
-  }
-}
 .Inline{
    display: inline-block; 
 } 
-.RentS{
+.RentS-Web{
   .RentS-Header{  
- 
+      padding-left: 10%;
+      background:white;
+      width: 100%;
+      height: 70px;
          .RentS-logo{
             float: left;
             width: 38px;
@@ -38,15 +22,15 @@
         color: black;
         font-weight: bolder;
       }       
-  }    
-} 
+  } 
+  .RentS-Body{
 
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+      .RentS-Box{
+        font-size: 100%;
+        width: 100%;
+        height: 130px;
+      } 
+  }   
 }
+
+
