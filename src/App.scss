@@ -2,35 +2,11 @@
    display: inline-block; 
 } 
 .RentS-Web{
-  .RentS-Header{  
-      padding-left: 10%;
-      background:white;
-      width: 100%;
-      height: 70px;
-         .RentS-logo{
-            float: left;
-            width: 38px;
-            height: 38px;
-         }
-      .title-normal{
-        float: left;
-        color: black;
-        font-weight: lighter;
-      }
-      .title-bold{
-        float: left;
-        color: black;
-        font-weight: bolder;
-      }       
-  } 
-  .RentS-Body{
-
-      .RentS-Box{
-        font-size: 100%;
-        width: 100%;
-        height: 130px;
-      } 
-  }   
+  .RentS-Im-Box{
+    background-color:gray;
+    width: 100%;
+    height: 520px;
+  }
 }
 
 
