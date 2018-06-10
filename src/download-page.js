@@ -9,10 +9,19 @@ import { FormControl} from "react-bootstrap"
 import { FormGroup } from "react-bootstrap"
 import { Button } from "react-bootstrap"
 import { ButtonToolbar } from "react-bootstrap"
+import Slider from "react-slick";
 import "./App.scss";
+
 
 export default class DownloadPage extends React.Component {
   render() {
+      const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
     return (
 <div className="RentS-Web">
 <div class="conteiner">
@@ -153,14 +162,31 @@ export default class DownloadPage extends React.Component {
        <br /><br />
        <div class="row">
           <div class="col-sm-4 col-sm-offset-2 col-xs-9 col-xs-offset-1 ">
-          <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-  <div><h3>1</h3></div>
-  <div><h3>2</h3></div>
-  <div><h3>3</h3></div>
-  <div><h3>4</h3></div>
-  <div><h3>5</h3></div>
-  <div><h3>6</h3></div>
-</div>
+         
+          <div>
+        <h2> Single Item</h2>
+        <Slider {...settings}>
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+        </Slider>
+      </div>
+
           <br/>
 <h3><b>Our Clients</b></h3><br/>
 <p>We have partnered with some of the most trusted names in real estate, including the California Regional Multiple Listings Service, the largest MLS in the U.S., ziplogix™, the largest forms platform in the U.S. and various state and local REALTOR® associations.</p>
