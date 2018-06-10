@@ -1,12 +1,85 @@
 .Inline{
    display: inline-block; 
 } 
+.imPages{
+  width: 100%;
+  height: auto;
+}
 .RentS-Web{
+  .Rents-Logo{
+    width:176px;
+    height:50px;
+  }
   .RentS-Im-Box{
-    background-color:gray;
+    background-image:url("1519916734.jpg");
     width: 100%;
-    height: 520px;
+    height: 610px;
+  }
+  .RentS-Im-Box1{
+    background-image:#C0C0C0;
+
+  }
+  .RentS-Im-Box2{
+    color: white;
+    background-color:#5095fb;	
+    width: 100%;
+    height: auto;
+  }
+  .RentS-Im-Box3{
+    background-color:#e6e6e6;	
+    width: 100%;
+    height: 480px;
+  }
+  .RentS-Im-Box4{
+    background-color:white;	
+    width: 100%;
+    height: 360px;
+  }
+  .RentS-Im-Box5{
+    background-color:#e6e6e6;	
+    width: 100%;
+    height: 670px;
+    .imRxT{
+      width: 260px;
+      height: auto;
+    }
+  }
+   .RentS-Im-Footer{
+     background-color: black;
+     color:white;
+     width: 100%;
+     height: 320px;
+     a:link {
+    color: #e6e6e6;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #e6e6e6;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+  }
+  
+  .font-link{
+    color: white;
   }
 }
 
+@media (max-width: 600px) {
+  .text-xs-center{
+     text-align: center;
+  }
+}
 
+@media (max-width: 800px) {
+  .text-ls-center{
+     text-align: center;
+  }
+}
