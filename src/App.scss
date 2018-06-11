@@ -1,6 +1,48 @@
 .Inline{
    display: inline-block; 
 } 
+.buttonn{
+  border-radius: 30px;
+  background-color: #4480e9;
+  border: none;
+  color: #e6e6e6;
+  width: 260px;
+  height: 40px;
+  text-align: center;
+  font-size: 12px;
+}
+.navStyleBlack{
+  background-color:rgba(0, 0, 0, 0.5);
+  border: none;
+  font-weight: bolder;
+  padding: 0px;
+  height: 70px;
+  .textN{
+    color: white;
+    padding: 8px 15px;
+  }
+  .picture{
+    padding: 8px 15px;
+    width: 200px;
+    height: auto;
+  }
+  .buttonLogIn{
+    padding: 8px 20px;
+    background-color:rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+  .buttonSignUp{
+    padding-top: 7px;
+    padding: 8px 20px;
+    background-color:rgba(255, 255, 255, 1);
+    color:black;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+}
+.buttonnW{width: 140px;}
 .imPages{
   width: 100%;
   height: auto;
@@ -13,44 +55,55 @@
   .RentS-Im-Box{
     background-image:url("1519916734.jpg");
     width: 100%;
-    height: 610px;
+    height: 560px;
   }
   .RentS-Im-Box1{
     background-image:#C0C0C0;
-
   }
   .RentS-Im-Box2{
     color: white;
     background-color:#5095fb;	
     width: 100%;
-    height: auto;
+    height: 460px;
+    .imPagesB2{
+      height: 30px;
+      width: auto;
+     }
   }
   .RentS-Im-Box3{
     background-color:#e6e6e6;	
     width: 100%;
-    height: 480px;
+    height: auto;
   }
   .RentS-Im-Box4{
-    background-color:white;	
+    background-color:gainsboro;	
     width: 100%;
-    height: 360px;
+    height: auto;
+    .imPagesB4{
+      margin: auto auto;
+      height: 50px;
+      width: auto;
+    }
   }
   .RentS-Im-Box5{
     background-color:#e6e6e6;	
     width: 100%;
-    height: 670px;
+    height: 320px;
     .imRxT{
-      width: 260px;
+      width: 360px;
       height: auto;
     }
   }
    .RentS-Im-Footer{
+    .white, .white a {
+      color: #fff;
+    }
      background-color: black;
      color:white;
      width: 100%;
      height: 320px;
      a:link {
-    color: #e6e6e6;
+    color: gainsboro;
     background-color: transparent;
     text-decoration: none;
 }
@@ -60,7 +113,7 @@ a:visited {
     text-decoration: none;
 }
 a:hover {
-    color: red;
+    color: #8cadf2;
     background-color: transparent;
     text-decoration: underline;
 }

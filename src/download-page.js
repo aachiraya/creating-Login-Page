@@ -16,12 +16,17 @@ import "./App.scss";
 export default class DownloadPage extends React.Component {
   render() {
       const settings = {
-        dots: true,
-        infinite: true,
         speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
+        rows: 2,
+        slidesToShow: 2,
+        slidesToScroll: 2
       };
+      const settinngs2 = {
+        speed: 500,
+        slidesToShow:3,
+        slidesToScroll:3
+      }
+     
     return (
 <div className="RentS-Web">
 <div class="conteiner">
@@ -29,35 +34,41 @@ export default class DownloadPage extends React.Component {
 <div className="RentS-Im-Box  ">   
 <div class="row">
 <div class="col-sm-12">
-<Navbar inverse>
+
+<Navbar inverse className="navStyleBlack">
   <Navbar.Header>
     <Navbar.Brand>
-      <a href="#brand">
-           </a>
+    <img className="picture" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbgAAAB7CAMAAAAxH2UvAAAAq1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Nr6iZAAAAOHRSTlMA8O7z5d7o2p9U1QhmyfnRxfUbYXAV4qTNaVi7teurBG0PjXqxhltDMCbLf7+adUcf15NRSzw1LHqDQ1sAAA5sSURBVHja7Nvpdqo6GIDhjxCIoowyOYAFxQHnOfd/ZafdS8sQQDxn//Asef51b4tdeRsIwUKj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go3G+7IuM3O77Z9vY2j8b1i7aC3SHzrxzabd/0RPU2gG3iyg8eY6kUALrM/QeGdbTEv4zax7X8shrbCFxns60WrDDjTe0IQ+QyxovJ0tfU7cQ+PNmLQO9KZz7jJ/MOCznGg9BN7R+GOXUAaty4E3NBbpQx8+CqEFWgotMID3M8b0oQufZEULTOBKC+hveBX51HAWLRACwE6hLB/ezqeG21DWCr4Vz7kbvJsPDbekLBPgUU4LwzVNW8O7+dBwx6p9yRs9MjcLb3cz96HhRJrXh8TABOjmL39v5jPDzWheD3L6NEOAN/OZ4YY0ZwZsuKx327L8zHA2zToBY/Luj+aE1E//KfY0qw2sG6G11pWL8+6P8w3ujK+j47cCyJpvQ2cYu9q0FX7doMDtcaBlcmwzdEayu/bDbgcSne9XzXcefTjOv7+ez3cLKLQ8db9Ms989LeGZxeD7pf3ePPgvg3vudbvdXvsGzwWXQe9b+9qBWno041x80Gw5bgyFNHo3vQ9TqNAfBqRcV9mDaX0D8nx6t7kPgCnThPj1fJdVA9bFnBKOQxxCHBJG2znkzGPfelQzpzb/80Lek6PiMVkNR2Hyrf3NSD1Cxq3rSIhHCHFc7t1YwSmUMcf9vNbWolPn5ZuBssN3SJ2L3IjeOZnfCcWCX4spZSirALI2mQVsZ8VkCZ6FG7GTzUG8KGDEc981BII5brTLL9OwAT/2R5HHkkQEIqku4fj1CVij5MzTXv8cUhll3u6IeZEQ7HFIFA6YR6PydJ2+yiPhYHsIefZBQLzcg6dGNGUBZcaHGpsnv1FamWmjWNkiLDSoCLfzKMMeP8IptNAUcr48T0J27Ky+el3zOJIwkjDvW5DSVmILvnVt3iXIVtdDTRUQjmWs+xbktUTbhx/WVMdxfBAzs3yCOZVwguyEk9VmKHmiK3K+BYXOqk5UhNXpcbU6TlWMVIGXL/CEynQr1pFp4lIjnEaZcAtCyzil4baVM8qg9cJFiiSK0dWCu/0lIrqEhCsbrqUTW5e3V6MzDoxFb8SLcswJ57JwcwHJhPNk5ziDB2Ooq0SX+7fgca1rIeQi4QQFQt52eTu6GPfvvUQCr2K0qr0gQ1eo0hnSZ2u3aSrDmjLhTgottx4XhYvu3Vjzl8L1qMsNr5Cx32Js6+1MOAOCtXLQp7MgNSEcnWi2PisOd+Ltg65t5xYkFoSXObcbQMqlpUsC34W8sU9dG0U3SFlGoq0qrbr7JgFUSrcYPAm3gQ1lwl1pJa0o3GxJSwivhLMwwXIH8i6qgk7pcO4YportrSDLxKJGlF1RuAsviNIke2hDQLI+tSDH9ASJ9th1mOZJO8jZSaJMN1AF0zulb5rbGRS7bL++ekm49pNw2xtlwlkKTRGnYdSSM//kF4TbSLTMMnU3w3IhLdJdtASWNcyeKjVY6Ui9Qt5NQhrhb/lwU7AEkZsa+YvKd7cQWBdsq3quUaho3NoCRrBGGo2gwoGmoXpPfnbPrnExTTPyT9md6xh+WG1CE13m7Z5/QNdyHKfl6PRBdv7wt5BikAO3gqfa+nQl6MOgqLDradi1suGwAxuFj5ixUrSkW8YCEwHn10Oc1ileU3ixcq48/6XFUCyiGdeycCyk+ccg+5RdTHcPaWJfGk42z5fLwKEpWv2dk7mnitca4byY8MXDCJaANRrmZlzY9pQVm1/WfSg252PkQyLAAiEGlLyjLUgWlHKyA1Qv3LJmOH9y6TDXIrwv2widloRTH2fwmUJ/6akRfrJX2UaStKwTzhXwHootkKSiSyacOtLohr1vsolqQYlIkdPT6MgnXzLmKFZCKLX6N+GsOuH0o1F4rl2U/wS3wnBO8T7PovYmc5eT1H2tcNygfKB4mfMz4WQVu8z8NHVNKT9I4BKcrJ8Xuus5UOqoq7ZR8xOVcnpHZ+R3isN54xrh1gYkjKod6mTYo6JwIaS49Ne8drg+J0m1wpEYyqlExbd0uFhWTpAnC0JShjVQZP7CrJmKLUVXP0KZfUk4KZlZTLh1jV0Yp+QD7sq44ndHfAxK6eaVSX+da4ebcSqudarkIig3uS86knC2NoacixfrJpQLpAP3iGEQCY+gQsQRtVPvsY6ceUynl4SLnocblv1PCCyFPpyYcEIH0nb0V7t2uB2KvahGOMQPoFygHuxhJhw3g7wN5+IFVFjx0mM50lVkfgYV5rzrzaHM+vVwl6fh9ADSgiTNrfJZ7oYJdy79zPWgdjiLCDHfrxGOG0CFMBOlJR7cgHkn9YCnUGWBXb79OJ5K9lAhiA98ZEGJ8OVw3PhpuEnZyZCvfrQ0zYcj5RfEWe1w0KOxyh+Xz8PNoEKfl3UzFU4YMgNxtV1+C1UC+fD4HZraROtAlSMShmcocS2+OZpmRnnL1K0O1y57hK47rT82rcQmmfRqPtwEcqSCcB3xSTg4UlX2iN/dvxKOraJ6rUw4Zth3novOUGkkoBB+7CVJbEGlLn+Iu7X+cEBaPGiUUmW+uGvRlPB5uB5zN1EP18mF2/6dcLD1dEnFvOqHA+Pfhgs0Igyrw/WQivdQKeSwf98Bc/UvqDTnJcmEMhv6ouXL4Y60LuPvzDjWNZR08XCwOU5tTWbGq+Ee57Z1pzLclnPVyKzkk/spdie6Quur0pGoZAJlBvQ1NrwcbkPrWv6tcCzj6x/27nQ7URgMwPCXBIiibCIIVVBcUEBtcc39X9l0llYcJEbpmVOP8/ysbY/y2hhJpKEpEdfIFUTURpzcPDmBnkKXETdchlJNQly5Kf+uvw08k6JqGGPXNOQMKgXsJo1vEu6lIhxHtJ9MVYkohhogeem3/g6HbwjX44TjY/IpHLlCZxuoNGM3OcL3GCo54Xg6Bz+kCFPPJV73tnChVBgqexVDZZ7Zv7QrdePPobLnc4zedXm7jBbsFhpAncmJrjMOaVg7nIikmZlWkMr6NLohXGtJC6ezetKFcDH2ggTEHCSPZFBLym4wuiPcmn06OJ2/vZ04UDucoMjuYWqyZSQe7igbUgjccHPFQzGIcQzVnUItL0wcie4INy+EA6764cTFkmyylXg4m6Roxg+3kA08BkGhpBoO1BHpTNgM7gg3xOzD5vuEg4OrGkpSDLcFjhlJSZMfrqVRqrVAzIx40gJqmTBhyT3hIGQfyDcKB11LsyaiJ5lhIKuGww8HY6KhVxBj6xpZQy0tJiqEu8LZrHBTyTb6snA23OKNGkGjEI57gnhLUiWEK+EWiofGwi9ylHpDqGXDBL3dF64VcF4kXxgJ4+PXhBvBTaau0iuE88iO8+gCzVpfCwd9qXjSi29iaWQLtQyZmD7cFw78imXY0749d7Pv1A+nwW/RQnB+cBYuleWoeguIl6vR1XAx0awx50BDQRIYstr6J39yyb3hhoR9Ggyh4Hg66qv64dhyDxDNG1gHAcO+fDZUarnegwqpZOpjuBoONCUlr1AhdsdxIX5mmXoGFTppz0/gmhZmApZwbzjYsxM5hg/RWGefjneGA4kVyCph7zpi74GtdXGo7Hksq1oa0yjtCITbI8+lTtUiOmZKIVyLup61q5yhIXb4oonlm3g4/j7ApX3otJzjbhawEx/uDWewssKTY1B1bNaWJx0L4ZS9zy5vGRnpnsbawAtX3Jzch4t6lmZtoeDVMlw3gUtipOljuG4YiEwpa4QDjZ3Deum33xuuwbuz0Yohv2JSqeLB2Z6TOSwtMrtQWDdMKwShcMM+Mcng0k0ry7QacCbTNSU/QlnzPSl1QECbXaNHtcINqcC8575wc1amwB8L3TXINIGSjqF41rwYDsfg5ASFHTgTrYhhBkYkFg4cFZlYS0pfniLNWv79Iw3dlKRmeQBEKrX2X3TGMoNa4SBacheLaoQDwsqcz6zUSjEdJ3AuViWNZaWTzG+epaiZA5+GIw+lJlEdEAwHnVQ3FTk7v7VrYE03nQvr2B7FjQSKdn3iSWQOYhaMTxnWDAcwZlXWUCvcKyvrng5kT3dVko/tBD4kfg9RlW2gFA6cqS6TdPaSDAHgbTfpE9k09GUHhMNB1NNz1VpODqdPOw0smrMwgrKMSCnJZ6+fH7K1G4Hi6cYBRK0YVxNqh4OdyS7pH6BeOMj4A0TbtFwaEDqddeM49mchJZKB3Ir1uBkOKEZ5PwwHBiay5uFgDMAJV7bOLYMSd5rFzWacTSUi55a6hou2pk5VFCxndnP7sm6oRFFxsIlAnM44BnCVV3q2l9ke+5u2rd7LXjpgqOK05ERnRW7vAGdGfZm41MXoJyypMpHDpGoFfD9QiGrIriurXpoTpb+/uBmU9+a5s6LENdzf13hwVYUYGweqTDSkGPKv70VK/vOuzeEWTf7a9FVj88MOqh3HlJ0YWQIlE/ND+ROc2oc5nOmMA/aHvNlD2XEypQHGv8Jhtz9JAKq3LuxXOcaIEIQD4+Jvg2wabobA0RkNXIzJO4zlMHaAo9UM5d/fi7C0zJIvXFHtwhc6btvrSTbp2rsEvk5rbo+6o/Z2AVWSeTO222375XQJncoV8M7rS9v37Ze5A3dbbGPf99uxyMNMdrH/zt4e4HbOg13+vKZyuO94xWkhI1bhG16JGeB/uJN+1Vu4J/DQ4RzrWQfKBw8Hu8urOc/gscNBeGlG+RQePNxQKV+l5zk8eDhI2Dn0LP/w79HDQZudOcCTePhw54vVE3gWP9q7YxQEghiAoplyLd1O7BZLsRHM/U+mIMI29jvJezcIvwmkyCfcEnM77e+bbRQId86fEX0UCBfP435A2hHu76/b+QfpFu57Dr9FJzXCxTXzHq0UCReXR/SyjFEiXDtr5hrM57VtnZZoAAAAAAAAAADgyN5g9ImuYf34aAAAAABJRU5ErkJggg=="/>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
   <Navbar.Collapse>
     <Nav>
-      <NavDropdown eventKey={2} title="BUSINESS" id="basic-nav-dropdown">
+      <NavDropdown className="textN" eventKey={2} title="BUSINESS" id="basic-nav-dropdown">
         <MenuItem eventKey={2.1}>Action</MenuItem>
         <MenuItem eventKey={2.2}>Another action</MenuItem>
         <MenuItem eventKey={2.3}>Something else here</MenuItem>
         <MenuItem divider/>
         <MenuItem eventKey={2.3}>Separated link</MenuItem> 
         </NavDropdown>
-      <NavItem eventKey={3} href="#">
+      <NavItem className="textN" eventKey={3} href="#">
         BLOG
       </NavItem>
-      <NavItem eventKey={4} href="#">
+      <NavItem className="textN" eventKey={4} href="#">
         HELP
+      </NavItem>
+      <NavItem className="textN" eventKey={5} href="#">
+        SCREEN TENANTS
       </NavItem>
     </Nav>
     <Nav pullRight>
       <NavItem eventKey={1} href="#">
-        Link Right
+      <Button className="buttonLogIn " ><b>Log In</b>  </Button>
       </NavItem>
       <NavItem eventKey={2} href="#">
+      <Button className="buttonSignUp" ><b>Sign Up</b>  </Button>
+      </NavItem>
+      <NavItem className="textN" eventKey={3} href="#">
         For Renters
       </NavItem>
     </Nav>
@@ -71,7 +82,7 @@ export default class DownloadPage extends React.Component {
  <br/><br/><br/><br/>
 <h2><b>Verify Tenants at Light-Speed</b></h2>
 <h4>RentSpree will simplify the rental process and land you better tenants.</h4>
-<h1>SUBMIT BUTTON</h1>
+<Button className="buttonn" ><b>Requrest a Demo</b>  </Button>
 <h5><i>And I will call you within a few minutes - Michael Lucarelli</i></h5>
  </div> 
  </div> 
@@ -125,7 +136,7 @@ export default class DownloadPage extends React.Component {
 <li>National Eviction Report</li><br/>
 <u><a className="font-link">Learn more</a></u>
 </ul><br/><br/>
-<img className="imPages" src="https://www.rentspree.com/dist/5a6dfea788c4a681cb6dbfc2ee10c980.png"/>
+<img className="imPagesB2" src="https://www.rentspree.com/dist/5a6dfea788c4a681cb6dbfc2ee10c980.png"/>
          </div> 
        </div> 
     </div> 
@@ -133,17 +144,17 @@ export default class DownloadPage extends React.Component {
  <div className="RentS-Im-Box3"> 
 <div class="row">
 <div class="col-sm-12 text-xs-center">
-<Navbar>
+
+<Navbar className="navStyl">
   <Navbar.Header>
-    <Navbar.Brand>
-      <h6>Want to see how RentSpree benefits your business?
-</h6>
-    </Navbar.Brand>
+    <Navbar.Text>
+    <h6>Want to see how RentSpree benefits your business?</h6>
+    </Navbar.Text>
     <Navbar.Toggle />
   </Navbar.Header>
   <Navbar.Collapse>
     <Navbar.Form pullLeft>
-      <Button type="submit">Request a Demo</Button>
+    <Button className="buttonn buttonnW" ><b>Requrest a Demo</b>  </Button>
     </Navbar.Form>
   </Navbar.Collapse>
 </Navbar>
@@ -161,44 +172,65 @@ export default class DownloadPage extends React.Component {
        <div className="RentS-Im-Box4"> 
        <br /><br />
        <div class="row">
-          <div class="col-sm-4 col-sm-offset-2 col-xs-9 col-xs-offset-1 ">
+          <div class="col-sm-3 col-sm-offset-2 col-xs-9 col-xs-offset-1 ">
+          <br/>
+<h3><b>Our Clients</b></h3><br/>
+<p>We have partnered with some of the most trusted names in real estate, including the California Regional Multiple Listings Service, the largest MLS in the U.S., ziplogix™, the largest forms platform in the U.S. and various state and local REALTOR® associations.</p>
+         <br/><br/><br/>
+         </div> 
+
+          <div class="col-sm-4 col-xs-9 col-xs-offset-1 ">
          
           <div>
-        <h2> Single Item</h2>
+            <br/><br/><br/>
         <Slider {...settings}>
           <div>
-            <h3>1</h3>
+          <img className="imPagesB4" src="https://www.rentspree.com/dist/4cd7dde3c8b5d8e79aa5296a093ac9cd.png"/>
           </div>
           <div>
-            <h3>2</h3>
+          <img className="imPagesB4" src="https://www.rentspree.com/dist/8d1f50749db396bd651f34c2d6d64672.png"/>
           </div>
           <div>
-            <h3>3</h3>
+          <img className="imPagesB4" src="data:image/png;base64,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"/>
           </div>
           <div>
-            <h3>4</h3>
+          <img className="imPagesB4" src="https://www.rentspree.com/dist/9a327d091e727ad2609504726fe7d927.png"/>
           </div>
           <div>
-            <h3>5</h3>
+          <img className="imPagesB4" src="https://www.rentspree.com/dist/faa21bdccde9aaa232a294978c36f71c.png"/>
           </div>
           <div>
-            <h3>6</h3>
+          <img className="imPagesB4" src="https://www.rentspree.com/dist/abd82f14058e247edca89e8d62f770cc.png"/>
+          </div>
+          <div>
+          <img className="imPagesB4" src="data:image/png;base64,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"/>
+          </div>
+          <div>
+          <img className="imPagesB4" src="https://www.rentspree.com/dist/b5f50fde7b78c0f047fd90d8c3fe68be.png"/>
+          </div>
+          <div>
+          <img className="imPagesB4" src="https://www.rentspree.com/dist/ab1944c297bdbcdc9078e731f19cb16e.png"/>
+          </div>
+          <div>
+          </div>
+          <div>
+          <img className="imPagesB4" src="https://www.rentspree.com/dist/ee8d067b47d5ad4057600ac9ae5e50ee.png"/>
+          </div>
+          <div>
           </div>
         </Slider>
       </div>
 
-          <br/>
-<h3><b>Our Clients</b></h3><br/>
-<p>We have partnered with some of the most trusted names in real estate, including the California Regional Multiple Listings Service, the largest MLS in the U.S., ziplogix™, the largest forms platform in the U.S. and various state and local REALTOR® associations.</p>
-         </div> 
+</div>
+<br/><br/>
        </div> 
     </div> 
 
 
-       <div className="RentS-Im-Box5"> 
+       <div className="RentS-Im-Box5 Box5-xs"> 
        <br /><br />
        <div class="row ">
-          <div class="col-sm-4 col-sm-offset-2 col-xs-9 col-xs-offset-1 ">
+          <div class="col-sm-3 col-sm-offset-2 col-xs-9 col-xs-offset-1 ">
           <br/><br/><br/>
 <img className="imRxT" src="https://www.rentspree.com/dist/c6716c653466fecec93b0a3eb69929a2.png"/>
          </div> 
@@ -206,6 +238,7 @@ export default class DownloadPage extends React.Component {
           <br/>
 <h3><b>All-in-one online rental application platform</b></h3><br/>
 <p>Faster access to reports and reduced liability. RentSpree has teamed up with trusted credit bureau TransUnion to give you a complete application and tenant verification package. Each package includes a full online rental application along with a TransUnion credit report, criminal background check, and national eviction report.</p>
+         <br/><br/>
          </div> 
        </div> 
     </div> 
@@ -230,6 +263,10 @@ export default class DownloadPage extends React.Component {
 <a className="Inline" href="html_images.asp" target="_blank">Contact Us</a><font/>
 </h5>
          </div> 
+         <div class="col-sm-4 col-xs-9 col-xs-offset-1 text-xs-center">
+         <h5><b>CONTACT US</b></h5><br/>
+         <i class="icon-facebook white"></i>
+         </div>
        </div> 
     </div> 
 
