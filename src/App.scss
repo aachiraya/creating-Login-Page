@@ -47,6 +47,9 @@
   width: 100%;
   height: auto;
 }
+.contEdit{
+  margin: 0px;
+}
 .RentS-Web{
   .Rents-Logo{
     width:176px;
@@ -64,9 +67,9 @@
     color: white;
     background-color:#5095fb;	
     width: 100%;
-    height: 460px;
+    height: auto;
     .imPagesB2{
-      height: 30px;
+      height: 150px;
       width: auto;
      }
   }
@@ -88,9 +91,9 @@
   .RentS-Im-Box5{
     background-color:#e6e6e6;	
     width: 100%;
-    height: 320px;
+    height: auto;
     .imRxT{
-      width: 360px;
+      width: 100%;
       height: auto;
     }
   }
