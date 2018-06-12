@@ -44,6 +44,27 @@
     border-radius: 30px;
   }
 }
+
+.NavStyleBlack2{
+  background-color:rgba(0, 0, 0, 0.5);
+  border: none;
+  font-weight: bolder;
+  padding: 0px;
+  height: 70px;
+  .navText2{
+    color: white;
+    padding: 8px 15px;
+  }
+  .buttonSignUp{
+    padding-top: 7px;
+    padding: 8px 20px;
+    background-color:rgba(255, 255, 255, 1);
+    color:black;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+}
+
 .imPages{
   width: 100%;
   height: auto;
@@ -52,10 +73,6 @@
   margin: 0px;
 }
 .RentS-Web{
-  .Rents-Logo{
-    width:176px;
-    height:50px;
-  }
   //Verify Tenants at Light-Speed
   .RentS-Im-Box{
     background-image:url("1519916734.jpg");
@@ -94,28 +111,76 @@
   }
   //We built this for you
   .RentS-Im-Box2{
-    padding-block-start: 80px;
     color: white;
-    background-color:#5095fb;	
+    background-color:#5095fb;
+    .box2Triangle{
+      margin-left: auto;
+      margin-right: auto;
+      width: 0; 
+      height: 0; 
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent; 
+      border-top: 20px solid white;
+    }
     .box2Topic{
+      margin-left: 10%;
+      padding-block-start: 80px; 
+      padding-block-end: 20px;  
       font-size: 25px;
       font-weight: normal; 
-      padding-block-end: 20px;  
     }
     .box2Detail{
+      margin-left: 10%;
       font-size: 13px;
       padding-block-end: 20px;
     }
     .imPagesB2{
+      margin-left: 30%;
       height: 150px;
       width: auto;
+      
     }
   }
   //You are in great company
-  .RentS-Im-Box3{
-    background-color:#e6e6e6;	
+  .RentS-Im-Box3{ 
+    padding-block-end: 40px;
+    background-color: rgb(241, 210, 168);
     width: 100%;
     height: auto;
+    .box3Panel{
+      border-radius: 5px;
+      text-align: center;
+      padding: 30px;
+      padding-block-start: 15px;
+      width: 300px;
+      height: 180px;
+      background-color: white;
+      font-size:16px;
+      color: rgb(11, 158, 11);
+      margin: auto;
+      vertical-align: text-top;
+    }
+    .box3Triangle{
+      margin-left: 20%;
+      width: 0; 
+      height: 0; 
+      border-left: 16px solid transparent;
+      border-right: 16px solid transparent; 
+      border-top: 16px solid white;
+    }
+    .box3Slick{
+      padding-block-start: 40px;
+      padding-block-end: 40px;
+    }
+    .box3ImgCircle{
+      margin: 15px;
+      width: 50px;
+      border-radius: 50%;
+      margin-left: 17%;
+    }
+    .box3Name{
+      margin-left: 10%; 
+    }
   }
   //Our Clients
   .RentS-Im-Box4{
@@ -145,8 +210,8 @@
   //All-in-one online rental application platform
   .RentS-Im-Box5{
     background-color:#e6e6e6;	
-    padding-block-start: 80px;
-    padding-block-end: 40px;
+    padding-block-start: 95px;
+    padding-block-end: 30px;
     .box5Header{
       font-size: 25px;
       font-weight: bold;
@@ -159,7 +224,7 @@
       font-weight: 100;
     }
     .imRxT{
-      width: 100%;
+      width: 90%;
       height: auto;
       padding-block-start: 10px;
       padding-block-end: 40px;
@@ -167,29 +232,59 @@
   }
 
   .RentS-Im-Footer{
-    .white, .white a {
-      color: #fff;
-    }
+    padding-block-start: 40px;
      background-color: black;
      color:white;
-     width: 100%;
-     height: 320px;
+     .Rents-Logo{
+     width:176px;
+     height:50px;   
+     margin-left: 10%;
+     }
+     .white, .white a {
+      color: #fff;
+     }
      a:link {
-    color: gainsboro;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:visited {
-    color: #e6e6e6;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:hover {
-    color: #8cadf2;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
+     color: gainsboro;
+     background-color: transparent;
+     text-decoration: none;
+     }
+     a:visited {
+     color: #e6e6e6;
+     background-color: transparent;
+     text-decoration: none;
+     }
+     a:hover {
+     color: #8cadf2;
+     background-color: transparent;
+     text-decoration: underline;
+     }
+     .boxFooterHeader{
+      font-size: 14px;
+      font-weight: bold;
+      width: 120px;
+      display: inline-block; 
+     }
+     .boxFooterContact{
+     margin: 10px;
+     width: 400px;
+     height: auto;
+     margin-left: 10%
+     }
+     .boxFooterSocial{
+      margin: 10px;
+      width: 400px;
+      height: auto;
+     }
+     .boxFooterDetail{
+      padding-right: 10px;
+      padding-left: 10px;
+      display: inline-block; 
+     }
+     .boxFooterIcon{
+       margin-left: 10px;
+       width: 15px;
+       display: inline-block; 
+     }
   }
 }
 
@@ -201,10 +296,37 @@ a:hover {
   .text-xs-center{
      text-align: center;
   }
-
+  .RequestButton{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .NavStyleBlack{
+    background-color: rgb(53, 53, 53);
+  }
+  .ItemCenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+
 @media (max-width: 800px) {
   .text-ls-center{
      text-align: center;
   }
+  .imPages{
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .imRxT{
+    width: 180px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
