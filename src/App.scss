@@ -1,7 +1,7 @@
 .Inline{
    display: inline-block; 
 } 
-.buttonn{
+.RequestButton{
   border-radius: 30px;
   background-color: #4480e9;
   border: none;
@@ -11,17 +11,18 @@
   text-align: center;
   font-size: 12px;
 }
-.navStyleBlack{
+.ShortButton{width: 140px;}
+.NavStyleBlack{
   background-color:rgba(0, 0, 0, 0.5);
   border: none;
   font-weight: bolder;
   padding: 0px;
   height: 70px;
-  .textN{
+  .navText{
     color: white;
     padding: 8px 15px;
   }
-  .picture{
+  .navLogo{
     padding: 8px 15px;
     width: 200px;
     height: auto;
@@ -42,7 +43,6 @@
     border-radius: 30px;
   }
 }
-.buttonnW{width: 140px;}
 .imPages{
   width: 100%;
   height: auto;
@@ -55,49 +55,117 @@
     width:176px;
     height:50px;
   }
+  //Verify Tenants at Light-Speed
   .RentS-Im-Box{
     background-image:url("1519916734.jpg");
-    width: 100%;
-    height: 560px;
+    padding-block-end: 215px;
+    .boxPanel{
+      padding-block-start: 80px;
+    }
   }
+  //We make leasing simple
   .RentS-Im-Box1{
+    padding-block-start: 80px;
+    padding-block-end: 54px;
     background-image:#C0C0C0;
+    .box1Header{
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .box1Text{
+      font-size: 16px;
+      color: gray;
+      font-weight: 100;
+      padding-block-start: 1px; 
+      padding-block-end: 40px;
+    }
+    .box1Topic{
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .box1Detail{
+      padding-block-start: 16px;
+      padding-block-end: 40px;
+      font-size: 14px;
+      color: rgb(70, 70, 70);
+      font-weight: 100;
+    }
   }
+  //We built this for you
   .RentS-Im-Box2{
+    padding-block-start: 80px;
     color: white;
     background-color:#5095fb;	
-    width: 100%;
-    height: auto;
+    .box2Topic{
+      font-size: 25px;
+      font-weight: normal; 
+      padding-block-end: 20px;  
+    }
+    .box2Detail{
+      font-size: 13px;
+      padding-block-end: 20px;
+    }
     .imPagesB2{
       height: 150px;
       width: auto;
-     }
+    }
   }
+  //You are in great company
   .RentS-Im-Box3{
     background-color:#e6e6e6;	
     width: 100%;
     height: auto;
   }
+  //Our Clients
   .RentS-Im-Box4{
     background-color:gainsboro;	
-    width: 100%;
-    height: auto;
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+    .box4Header{
+      font-size: 25px;
+      font-weight: bold;
+      padding-block-end: 20px;
+    }
+    .box4Detail{ 
+      padding-block-end: 30px;
+      font-size: 14px;
+      color: rgb(70, 70, 70);
+      font-weight: 100;
+    }
+    .box4Slick{
+      padding-block-start: 40px;
+    }
     .imPagesB4{
       margin: auto auto;
       height: 50px;
       width: auto;
     }
   }
+  //All-in-one online rental application platform
   .RentS-Im-Box5{
     background-color:#e6e6e6;	
-    width: 100%;
-    height: auto;
+    padding-block-start: 80px;
+    padding-block-end: 40px;
+    .box5Header{
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .box5Detail{ 
+      padding-block-start: 16px;
+      padding-block-end: 40px;
+      font-size: 14px;
+      color: rgb(70, 70, 70);
+      font-weight: 100;
+    }
     .imRxT{
       width: 100%;
       height: auto;
+      padding-block-start: 10px;
+      padding-block-end: 40px;
     }
   }
-   .RentS-Im-Footer{
+
+  .RentS-Im-Footer{
     .white, .white a {
       color: #fff;
     }
@@ -122,10 +190,10 @@ a:hover {
 }
 
   }
-  
-  .font-link{
-    color: white;
-  }
+}
+
+.fontWhite{
+  color: white;
 }
 
 @media (max-width: 600px) {
