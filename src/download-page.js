@@ -172,11 +172,11 @@ export default class DownloadPage extends React.Component {
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-offset-1 col-xs-10 "> 
         <div class="col-sm-6 col-xs-12 Set-Padding">     
-          <div className="box4Header">Our Clients</div>
-          <div className="box4Detail">We have partnered with some of the most trusted names in real estate, including the California Regional Multiple Listings Service, the largest MLS in the U.S., ziplogix™, the largest forms platform in the U.S. and various state and local REALTOR® associations.</div>
+        <div className="box4Header">Our Clients</div>
+        <div className="box4Detail">We have partnered with some of the most trusted names in real estate, including the California Regional Multiple Listings Service, the largest MLS in the U.S., ziplogix™, the largest forms platform in the U.S. and various state and local REALTOR® associations.</div>
         </div> 
         <div class="col-sm-6 col-xs-12">
-          <div className="box4Slick">
+        <div className="box4Slick">
             <Slider {...settings}>
             <div>
               <img className="imPagesB4" src="https://www.rentspree.com/dist/4cd7dde3c8b5d8e79aa5296a093ac9cd.png"/>
