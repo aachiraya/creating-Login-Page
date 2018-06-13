@@ -191,8 +191,7 @@
      background-color: black;
      color:white;
      .Rents-Logo{
-     width:176px;
-     height:50px;   
+      @include WxH(176px,50px); 
      margin-left: 10%;
      }
      .white, .white a {
@@ -240,7 +239,8 @@
        display: inline-block; 
      }
      .bottomC{
-     
+      padding-block-start: 10px;
+      padding-block-end: 10px;
      }
   }
 }
