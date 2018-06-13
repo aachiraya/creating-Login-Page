@@ -1,0 +1,55 @@
+
+@mixin createBottom($widthButton){
+    border-radius: 30px;
+    background-color: $blueBottom-color;
+    border: none;
+    width: $widthButton;
+    color: $whiteText-color;
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+
+@mixin memberBottom($BGColor,$fontColor){
+    padding: 8px 20px;
+    background-color:$BGColor;
+    color: $fontColor;
+    font-size: 12px;
+    border-radius: 30px;
+}
+
+@mixin headerFont{
+    font-size: $header-size;
+    font-weight: $heavy-line;
+}
+
+@mixin triangleDown($left,$right,$top){
+    width: 0; 
+    height: 0; 
+    border-left: $left solid transparent;
+    border-right: $right solid transparent; 
+    border-top: $top solid white;
+}
+
+@mixin centerFix{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin navTap($BG){
+    background-color:$BG;
+    border: none;
+    font-weight: bolder;
+    padding: 0px;
+    height: 70px; 
+}
+
+@mixin paddingSet($R,$L){
+    padding-right: $R;
+    padding-left: $L;
+}
+
+@mixin WxH($W,$H){
+    width: $W;
+    height: $H;
+}

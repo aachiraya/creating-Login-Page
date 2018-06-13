@@ -11,8 +11,9 @@ import { Button } from "react-bootstrap"
 import { ButtonToolbar } from "react-bootstrap"
 import Slider from "react-slick";
 import "./App.scss";
+import bg1 from "./bg1.jpg"
 
-
+// const bg1 = require("./bg1.jpg")
 
 export default class DownloadPage extends React.Component {
   render() {
@@ -95,7 +96,7 @@ export default class DownloadPage extends React.Component {
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-offset-1 col-xs-10">
         <div class="col-sm-4 col-xs-12 box-xs-center">
-          <img className="imPages" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAMAAABlASxnAAABYlBMVEUAAABOXGrh5+fm7OwtQU7d5ebu9PTX3+EsQk/s8fEsQU8sQk/t8fHe5OXX3eAuQlLw+PhOWVnr8PDr7+/p7u7g5+fO1tbX3t/q7+/f5ubl7OzU3N3t8fHV3N3l6+stQU7j6enS2tvP19nn7Ozu8vJOZG/o9PTj6urf5ebc4uTR19nl6+ubpqz////s8PAsQU7Y2NgxRlLY3t9HWWRtnNTe6fbf5ufFzc/i6OnY4ODN1dfd3d3l6+vm7vjd4+R4pNjj6ure5eXS2drP1tjn7e3a4eLX3t/n7u7T2tvq8fnV3N3M1NbW3d52o9fb4uP09PSzzOqtyOfQ2Nl8p9nK0tTU29y3wMTh5+jL09XN3fB5pdinxObb4uK3wcS3wMPS4PLm7O3C1u2xyumiwOScvOKMsd10odaMmZ9TZG84TVni6/epxOa8xMfp7u6ps7igq7Bre4RkdH2wur59ipJxf4hBVWGQbi7+AAAALXRSTlMAJNT+ki8HIf3389W2eU0rEAXfsJyRhVpO9O/m1crFvbGqbV06Fxbz6MOaf1zSRN23AAAERElEQVR42uzZvW6DMBhGYQ8MURhQrqBXYLmVwoQQcwYUUKYkQ5Tfob3/vZFpFUAl4esAcXzOJTwChP0qIiIiIiIiIiIiIiIiImoWBeHUONc0DCI1dLNgYhxtEszUoM3ejMO9DasVGKcL1IBFzr6DVZNI3YkHa7xHKzS2DwcztlAN17Sy0g5WaU3VcBnXsYzqDCywwGoFliCwBIElCCxBYAkCS5CXWOts3i5b6x75iJVv43bbXPfIR6x5nupmaT7XtZbJ+z9Kli+JddykTavNsYFlreQlL4kVHzZpw+oQg9WJpYssvVllhY55DbuxrNbNymL1yMcPfKwrrV8rsB5glZcstVaXEqwHWOVqUeT7z31eLFYlWHexrlZa7875eaf1VavnBz5Z+ohlrX6yWj1/HRIPsU7Wqq51AqsLK7NWda2M17D/QfqLgzRXNFz+gfVnYIEFViuwBIElCCxBYAkCS5CXWBx3WKRZpMfHYpFmkWaRfgIsFmkWaRbp8bFYpFmkWaRZpJ3BYpFmkeaKRnH5BxZYtcASBJYgsASBJQgsQWAJAkuQl1gcd1ikWaTHx2KRZpFmkX4CLBbpb/bsXjWBMIjC8LR2i1paWp+BWNgFEpIm5AJSpV0XVqP5uf8k5GctXHCKGZnhPJfwwscHc7hIc5G+fCwu0lykuUhzkU4Ti4s0F2meaITHP8ZirCOMZcBYBoxlwFgGjGXAWAaMZcBYBoxlwFgGZWLpKiGNj5WejGIsxmKs0xjLgLEMMse6Sk/iID0ZxViMxVinMdaI/u2wb+/hqUqsm3f91u3gqEis7UZ/vcBPkVit/uke4KZGrLtO/7VwUyPWWgcbuKkRq2es893q4AA3NWJhpRrwHRaJ1Q+vcAtHEmcCN63+6J7gaCJxpvDz/KFf9tfwNJU4c3ha714f4WsucZZIbimBZkhtJpGaBRJbNBKq+WzHXloTBqIoAN+2RBFUSltfFUUt2icuUxUJxhgtUVyI0SxU+v9/RW+uQguOVVBaZM43d85wthLMI14/W/Fr+mvZeKx+hmLxLP2L6sVJvK2WsxnParZchedsu68uTqRKZy45DaYsCMKQ2e4RApEZBsOfAkWPEohKaz+DQKRbjtNqcYQHb0fRkwTiZTJxJrwdOTgVvUIgyl026X5T9DSBKHwIX5L5il4mEHnf8zzf9z1ZPIpeIAhFRiOPF+fmUPUuQSja74/6TEKoOh60RLJ5iAwBS7jNpozr8mbKniJgz+54vBhvYuFyqnoeb4csY1nWWPYmdnRcWkRGzrJt25JZ29UTpDvjyTRN2xS2zO6u+69l5ExzLsPBKWVnv9P6fyv72BBzSfFrL2r8tPXa6TRkOGTt7fcPpKfabbvdaTNJcUAv1UhDyZsr1gvjcx2HdQ0vrkhqMOgNwi1L5tBe1Owbs1G6PEZCq9ti+v04Gt8VAQAAAAAAAAAAAAAAAE7vCxAtpfLrSEchAAAAAElFTkSuQmCC"/>
+          <img className="imPages" src={bg1}/>
           <div className="box1Topic">1. Request applications</div>
           <div className="box1Detail">Enter your applicants' email addresses on RentSpree. Each renter will instantly receive an email to apply.</div>
         </div> 
@@ -114,7 +115,7 @@ export default class DownloadPage extends React.Component {
   </div> 
 
   <div className="RentS-Im-Box2"> 
-  <div className="box2Triangle"></div>
+   <div className="box2Triangle"></div>
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-9 col-xs-offset-1">
         <div class="col-sm-6 col-xs-12 ">
@@ -160,15 +161,15 @@ export default class DownloadPage extends React.Component {
   <div className="RentS-Im-Box3"> 
     <div class="row">
       <div class="col-sm-12 text-xs-center">
-        <Navbar className="navStyl">
+        <Navbar className="NavStyle">
           <Navbar.Header>
-            <Navbar.Text>
-              <h6>Want to see how RentSpree benefits your business?</h6>
+            <Navbar.Text className="navText2">
+              <h5>Want to see how RentSpree benefits your business?</h5>
             </Navbar.Text>
           </Navbar.Header>
           <Navbar.Collapse>
             <Navbar.Form pullLeft>
-              <Button className="RequestButton ShortButton" ><b>Request a Demo</b>  </Button>
+              <Button className="RequestButton ShortButton navCenter" ><b>Request a Demo</b>  </Button>
             </Navbar.Form>
           </Navbar.Collapse>
         </Navbar>
@@ -325,44 +326,51 @@ export default class DownloadPage extends React.Component {
 
         <div class="col-sm-6 col-xs-9">
           <div className="boxFooterSocial">
-          <h5 className="boxFooterHeader">CONTACT US</h5>
+            <h5 className="boxFooterHeader">CONTACT US</h5>
           </div>
           <div className="boxFooterSocial">
-          <div className="boxFooterIcon">
-          <i class="fas fa-phone"></i>
-          </div>
-          <p className="boxFooterDetail">323.515.7757</p>
-          </div>
-          <div className="boxFooterSocial">
-          <div className="boxFooterIcon">
-          <i class="far fa-envelope"></i>
-          </div>
-          <p className="boxFooterDetail">support@rentspree.com</p>
+            <div className="boxFooterIcon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <p className="boxFooterDetail">323.515.7757</p>
           </div>
           <div className="boxFooterSocial">
-          <h5 className="boxFooterHeader">FOLLOW US</h5>
+            <div className="boxFooterIcon">
+             <i class="far fa-envelope"></i>
+            </div>
+            <p className="boxFooterDetail">support@rentspree.com</p>
           </div>
           <div className="boxFooterSocial">
-          <div className="boxFooterIcon">
-          <i class="fab fa-facebook-f"></i></div>
-          <div className="boxFooterIcon">
-          <i class="fab fa-twitter"></i></div>
-          <div className="boxFooterIcon">
-          <i class="fab fa-linkedin-in"></i></div>
-          <div className="boxFooterIcon">
-          <i class="fab fa-instagram"></i></div>
-          <div className="boxFooterIcon">
-          <i class="fab fa-google"></i></div>
-          <div className="boxFooterIcon">
-          <i class="fab fa-pinterest-p"></i></div>
-          <div className="boxFooterIcon">
-          <i class="fab fa-youtube"></i></div>
+            <h5 className="boxFooterHeader">FOLLOW US</h5>
+          </div>
+          <div className="boxFooterSocial">
+            <div className="boxFooterIcon">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div className="boxFooterIcon">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div className="boxFooterIcon">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div className="boxFooterIcon">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div className="boxFooterIcon">
+              <i class="fab fa-google"></i>
+            </div>
+            <div className="boxFooterIcon">
+              <i class="fab fa-pinterest-p"></i>
+            </div>
+            <div className="boxFooterIcon">
+              <i class="fab fa-youtube"></i>
+            </div>
           </div>
           </div>
         </div> 
     </div>
     <div class="row">
-    <div class="col-sm-12 col-xm-10">
+    <div class="col-sm-12 col-xm-10 bottomC">
     <center>
     © All Rights Reserved by RentSpree LLC.Terms of UsePrivacy Policy      (version: 2.1.1)
     </center>
